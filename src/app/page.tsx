@@ -7,7 +7,7 @@ export default async function Home() {
   const products = await getProducts();
 
   return (
-    <main className="container mx-auto p-4">
+    <main className="container mx-auto p-4 page-transition">
       <h1 className="text-3xl font-bold mb-6 text-center">Our Products</h1>
       <ProductGrid products={products} />
     </main>
